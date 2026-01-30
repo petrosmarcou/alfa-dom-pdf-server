@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: alfa-dom-pdf-server
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PDF_SERVER_PORT
+        value: 10000
