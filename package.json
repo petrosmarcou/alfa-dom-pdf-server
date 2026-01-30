@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "node --loader ts-node/esm index.ts",
-    "build": "tsc && npx playwright install --with-deps chromium"
+    "build": "tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",
